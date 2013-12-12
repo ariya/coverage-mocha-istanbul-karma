@@ -1,0 +1,21 @@
+{
+    "name": "coverage-mocha-istanbul-karma",
+    "description": "Example of code coverage of Mocha tests using Istanbul and Karma",
+    "main": "sqrt.js",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/ariya/coverage-mocha-istanbul-karma.git"
+    },
+    "devDependencies": {
+        "karma": "~0.10.2",
+        "karma-mocha": "~0.1.1",
+        "karma-coverage": "~0.1.0"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/karma start karma.conf.js"
+    }
+}
