@@ -13,9 +13,11 @@
     "devDependencies": {
         "karma": "~0.10.2",
         "karma-mocha": "~0.1.1",
-        "karma-coverage": "~0.1.0"
+        "karma-coverage": "~0.1.0",
+        "grunt": "~0.4.1",
+        "grunt-karma": "~0.6.2"
     },
     "scripts": {
-        "test": "node_modules/.bin/karma start karma.conf.js"
+        "test": "grunt karma:test"
     }
 }
