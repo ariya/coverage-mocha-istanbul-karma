@@ -12,6 +12,7 @@
         "url": "http://github.com/ariya/coverage-mocha-istanbul-karma.git"
     },
     "devDependencies": {
+        "codecov.io": "~0.1.5",
         "karma": "~0.13.3",
         "karma-mocha": "~0.2.0",
         "karma-phantomjs-launcher": "0.2.1",
@@ -24,6 +25,6 @@
     },
     "scripts": {
         "test": "grunt karma:test",
-        "ci": "npm test"
+        "ci": "npm test && cat coverage/lcov/lcov.info | codecov"
     }
 }
