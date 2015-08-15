@@ -7,11 +7,25 @@ module.exports = function(config) {
       'sqrt.js',
       'test/*.js'
     ],
-    browsers: ['PhantomJS', 'Firefox'],
+    plugins: [
+        'karma-coverage',
+        'karma-mocha',
+        'karma-phantomjs-launcher'
+    ],
+
+    browsers: ['PhantomJS'], // , 'Firefox'],
 
     reporters: ['progress', 'coverage'],
     preprocessors: { '*.js': ['coverage'] },
 
-    singleRun: true
+    singleRun: true,
+
+    coverageReporter: {
+        dir : 'coverage/',
+        reporters: [
+            { type: 'html', subdir: 'html' },
+            { type: 'lcov', subdir: 'lcov' },
+        ]
+    }
   });
 };
