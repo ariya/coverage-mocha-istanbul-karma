@@ -19,6 +19,7 @@
         "grunt-karma": "~0.12.0"
     },
     "scripts": {
-        "test": "grunt karma:test"
+        "test": "grunt karma:test",
+        "ci": "npm test"
     }
 }
