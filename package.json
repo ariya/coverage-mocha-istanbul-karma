@@ -25,6 +25,6 @@
     },
     "scripts": {
         "test": "grunt karma:test",
-        "ci": "npm test && cat coverage/lcov/lcov.info | codecov"
+        "ci": "npm test && codecov < coverage/cobertura/cobertura-coverage.xml"
     }
 }
