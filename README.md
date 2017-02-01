@@ -1,4 +1,4 @@
-This repo contains an example setup for tracking code coverage of [Mocha](http://visionmedia.github.io/mocha) tests via [Istanbul](http://gotwarlost.github.io/istanbul/) and [Karma](http://karma-runner.github.io/).
+This repo contains an example setup for tracking code coverage of [Mocha](http://mochajs.org/) tests via [Istanbul](http://gotwarlost.github.io/istanbul/) and [Karma](http://karma-runner.github.io/).
 
 Run the following:
 
